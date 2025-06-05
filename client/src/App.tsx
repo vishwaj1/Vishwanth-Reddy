@@ -9,7 +9,7 @@ import NotFound from "@/pages/not-found";
 function Router() {
   const [location] = useLocation();
   // Use basePath only in production (GitHub Pages)
-  const basePath = import.meta.env.PROD ? '/Vishwanth-Reddy' : '';
+  const basePath = import.meta.env.PROD ? '/vishwaj1' : '';
 
   return (
     <Switch>
