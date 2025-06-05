@@ -16,7 +16,7 @@ const experiences = [
   },
   {
     title: "Full Stack Developer",
-    company: "Healthcare Solutions Inc.",
+    company: "IDS",
     period: "June 2022 - May 2023",
     description: [
       "Helped rebuild a hospital dashboard using React + TypeScript, cutting load time by 35% and improving overall user experience.",
@@ -28,7 +28,7 @@ const experiences = [
   },
   {
     title: "Software Developer",
-    company: "Tech Innovations Lab",
+    company: "IDS",
     period: "June 2021 - May 2022",
     description: [
       "Contributed to building EchoLens, an AI-driven meeting assistant using FastAPI, Celery, and HuggingFace (T5, BART) to summarize transcripts and extract action items from audio.",
