@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,12 +9,11 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { insertContactSchema } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
 
 export function ContactSection() {
   const { ref, isIntersecting } = useIntersectionObserver();
   const { toast } = useToast();
-  const queryClient = useQueryClient();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm({
     resolver: zodResolver(insertContactSchema),
@@ -27,29 +25,35 @@ export function ContactSection() {
     }
   });
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: any) => {
-      return await apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+  const onSubmit = async (data: any) => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("https://formspree.io/f/xpwrwgeo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
       });
-      form.reset();
-      queryClient.invalidateQueries({ queryKey: ["/api/contacts"] });
-    },
-    onError: () => {
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        form.reset();
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
-  });
-
-  const onSubmit = (data: any) => {
-    contactMutation.mutate(data);
   };
 
   return (
@@ -204,10 +208,10 @@ export function ContactSection() {
                 
                 <Button 
                   type="submit" 
-                  disabled={contactMutation.isPending}
+                  disabled={isSubmitting}
                   className="w-full py-4 gradient-bg text-white font-semibold rounded-lg hover:scale-105 transition-all duration-300 animate-glow"
                 >
-                  {contactMutation.isPending ? (
+                  {isSubmitting ? (
                     <>
                       <i className="fas fa-spinner fa-spin mr-2"></i>
                       Sending...

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Vishwanth Reddy</title>
-    <base href="/Vishwanth-Reddy/" />
+    <script>
+      // Set base href based on environment
+      const basePath = window.location.hostname === 'localhost' ? '/' : '/Vishwanth-Reddy/';
+      document.write(`<base href="${basePath}" />`);
+    </script>
   </head>
   <body>
     <div id="root"></div>

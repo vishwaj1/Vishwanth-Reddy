@@ -6,7 +6,7 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [location, setLocation] = useLocation();
-  const basePath = '/Vishwanth-Reddy';
+  const basePath = import.meta.env.PROD ? '/Vishwanth-Reddy' : '';
 
   useEffect(() => {
     const handleScroll = () => {
