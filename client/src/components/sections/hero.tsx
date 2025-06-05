@@ -20,7 +20,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fadeIn">
-            Hi, I'm <span className="gradient-text">Alex Chen</span>
+            Hi, I'm <span className="gradient-text">Your Name</span>
           </h1>
           <motion.p 
             className="text-xl md:text-2xl mb-8 text-gray-300"
@@ -28,7 +28,7 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Full Stack Developer & Data Enthusiast
+            Full Stack Developer & Data Tool Creator
           </motion.p>
           <motion.p 
             className="text-lg mb-12 text-gray-400 max-w-2xl mx-auto"
@@ -36,7 +36,7 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            I build innovative web applications and data tools that help developers find insights and turn complex questions into actionable SQL queries.
+            I create powerful data tools for developers that transform natural language questions into SQL queries, making data insights accessible to everyone.
           </motion.p>
         </motion.div>
         

@@ -5,50 +5,50 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 const projects = [
   {
     id: 1,
-    title: "QueryCraft",
-    description: "AI-powered tool that translates natural language questions into optimized SQL queries, helping developers analyze data faster.",
+    title: "SQL Query Assistant",
+    description: "Revolutionary data tool that transforms natural language questions into optimized SQL queries. Perfect for developers who want to analyze data without complex query writing.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["React", "OpenAI", "PostgreSQL"],
+    tags: ["React", "AI/ML", "PostgreSQL", "Natural Language Processing"],
     category: "data"
   },
   {
     id: 2,
-    title: "DevMetrics Pro",
-    description: "Real-time developer productivity dashboard with GitHub integration and team performance analytics.",
+    title: "DataInsight Dashboard",
+    description: "Comprehensive analytics platform that helps developers identify trends and patterns in their data through intuitive visualizations and automated insights.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["Vue.js", "Node.js", "MongoDB"],
-    category: "web"
+    tags: ["React", "D3.js", "Node.js", "Data Visualization"],
+    category: "data"
   },
   {
     id: 3,
-    title: "CodeTracker Mobile",
-    description: "Cross-platform mobile app for tracking coding sessions and managing project timelines on the go.",
+    title: "Query Builder Pro",
+    description: "Visual query builder that allows developers to construct complex SQL queries through drag-and-drop interface, making database interactions more accessible.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["React Native", "Firebase", "Redux"],
-    category: "mobile"
+    tags: ["TypeScript", "React", "SQL", "Database Tools"],
+    category: "data"
   },
   {
     id: 4,
-    title: "DataViz Studio",
-    description: "Interactive data visualization platform that automatically generates charts and insights from CSV uploads.",
+    title: "TrendScope Analytics",
+    description: "Advanced trend analysis tool that automatically detects patterns in time-series data and provides actionable insights for business intelligence.",
     image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["D3.js", "Python", "FastAPI"],
+    tags: ["Python", "Machine Learning", "FastAPI", "Time Series"],
     category: "data"
   },
   {
     id: 5,
-    title: "CollabSpace",
-    description: "Team collaboration platform with real-time code sharing, video calls, and project management features.",
+    title: "DevData Toolkit",
+    description: "Complete suite of data tools for developers including schema analyzers, query optimizers, and performance monitors for database operations.",
     image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["Next.js", "Socket.io", "Redis"],
+    tags: ["Next.js", "GraphQL", "Redis", "Performance Monitoring"],
     category: "web"
   },
   {
     id: 6,
-    title: "InsightPocket",
-    description: "Mobile-first data analysis app that connects to multiple databases and provides AI-powered insights.",
+    title: "Smart Data Explorer",
+    description: "Mobile-first application that connects to multiple data sources and provides AI-powered exploration capabilities for on-the-go data analysis.",
     image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["Flutter", "GraphQL", "TensorFlow"],
+    tags: ["React Native", "AI Integration", "Multi-Database"],
     category: "mobile"
   }
 ];

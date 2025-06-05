@@ -31,7 +31,7 @@ export function Navigation() {
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-bold gradient-text">Alex Chen</div>
+            <div className="text-xl font-bold gradient-text">Your Name</div>
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Home</button>
               <button onClick={() => scrollToSection('about')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">About</button>

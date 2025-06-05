@@ -3,24 +3,24 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
-    period: "2021 - Present",
-    description: "Led development of enterprise data analytics platform serving 10k+ users. Implemented AI-powered query optimization reducing response times by 60%.",
+    title: "Senior Data Tools Developer",
+    company: "Your Company",
+    period: "2022 - Present",
+    description: "Leading development of innovative data analysis tools that translate natural language into SQL queries. Created solutions that help developers access data insights 10x faster than traditional methods.",
     color: "electric-blue"
   },
   {
     title: "Full Stack Developer",
-    company: "StartupHub Inc.",
-    period: "2019 - 2021",
-    description: "Built scalable web applications using React and Node.js. Developed real-time collaboration features and integrated multiple third-party APIs.",
+    company: "Tech Innovation Lab",
+    period: "2020 - 2022",
+    description: "Built comprehensive data visualization platforms and developer tools. Specialized in creating intuitive interfaces for complex database operations and analytics workflows.",
     color: "deep-purple"
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Agency Pro",
-    period: "2018 - 2019",
-    description: "Created responsive web interfaces for client projects. Specialized in performance optimization and cross-browser compatibility.",
+    title: "Software Developer",
+    company: "Data Solutions Inc.",
+    period: "2018 - 2020",
+    description: "Developed web applications focused on data processing and analysis. Created tools that automated complex data workflows and improved developer productivity.",
     color: "electric-blue"
   }
 ];

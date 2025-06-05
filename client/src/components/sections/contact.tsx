@@ -71,23 +71,23 @@ export function ContactSection() {
             animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Let's Work Together</h3>
+            <h3 className="text-2xl font-semibold mb-6">Let's Create Amazing Data Tools</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I'm always interested in new opportunities and exciting projects. Whether you need help with data analysis tools, web development, or just want to chat about technology, feel free to reach out!
+              I'm passionate about building data tools that make developers' lives easier. Whether you need help with SQL query automation, data visualization, or want to discuss innovative data solutions, I'd love to hear from you!
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-4">
                 <i className="fas fa-envelope text-[hsl(var(--electric-blue))] text-xl"></i>
-                <span>alex.chen.dev@email.com</span>
+                <span>your.email@example.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <i className="fas fa-phone text-[hsl(var(--electric-blue))] text-xl"></i>
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (555) 000-0000</span>
               </div>
               <div className="flex items-center space-x-4">
                 <i className="fas fa-map-marker-alt text-[hsl(var(--electric-blue))] text-xl"></i>
-                <span>San Francisco, CA</span>
+                <span>Your Location</span>
               </div>
             </div>
             

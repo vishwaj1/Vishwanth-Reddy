@@ -35,12 +35,12 @@ export function AboutSection() {
             animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Passionate Developer & Problem Solver</h3>
+            <h3 className="text-2xl font-semibold mb-6">Data Tool Creator & Full Stack Developer</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              With over 5 years of experience in full-stack development, I specialize in creating data-driven applications that help developers and businesses make informed decisions. My expertise spans from building intuitive user interfaces to architecting robust backend systems.
+              I specialize in building innovative data tools that help developers find insights and trends in their data. My focus is on creating applications that translate natural language questions into optimized SQL queries, making data analysis accessible and intuitive.
             </p>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I'm particularly passionate about developing tools that translate complex data queries into actionable insights, making data analysis accessible to developers of all skill levels.
+              With expertise in modern web technologies and database systems, I create tools that bridge the gap between complex data analysis and user-friendly interfaces, empowering developers to make data-driven decisions effortlessly.
             </p>
             
             {/* Skills Grid */}
