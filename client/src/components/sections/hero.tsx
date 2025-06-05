@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       {/* Modern workspace background */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -13,19 +13,19 @@ export function HeroSection() {
       </div>
       
       <div className="relative z-10 container mx-auto px-6 max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <motion.div 
-            className="text-left"
+            className="text-left order-2 md:order-1"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fadeIn">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 animate-fadeIn">
               Hi, I'm <span className="gradient-text">Vishwanth</span>
             </h1>
             <motion.p 
-              className="text-xl md:text-2xl mb-8 text-gray-300"
+              className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-300"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -33,7 +33,7 @@ export function HeroSection() {
               Software Engineer
             </motion.p>
             <motion.p 
-              className="text-lg mb-12 text-white bg-gradient-to-r from-[#2a2a72]/50 to-[#009ffd]/50 p-6 rounded-xl border border-white/20 shadow-lg"
+              className="text-base sm:text-lg mb-12 text-white bg-gradient-to-r from-[#2a2a72]/50 to-[#009ffd]/50 p-4 sm:p-6 rounded-xl border border-white/20 shadow-lg"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.8 }}
@@ -47,10 +47,10 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.8 }}
             >
-              <button className="px-8 py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow">
+              <button className="px-6 sm:px-8 py-3 sm:py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow">
                 Resume
               </button>
-              <button className="px-8 py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300">
+              <button className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300">
                 Website
               </button>
             </motion.div>
@@ -61,9 +61,9 @@ export function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative order-1 md:order-2 mb-8 md:mb-0"
           >
-            <div className="relative w-full max-w-md mx-auto">
+            <div className="relative w-full max-w-[280px] sm:max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--electric-blue))] to-[hsl(var(--neon-purple))] rounded-2xl blur-xl opacity-30"></div>
               <img 
                 src="https://i.ibb.co/s9MB6kBD/profile.jpg" 
