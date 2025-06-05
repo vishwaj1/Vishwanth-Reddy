@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "wouter";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [location, setLocation] = useLocation();
+  const basePath = '/Vishwanth-Reddy';
 
   useEffect(() => {
     const handleScroll = () => {
