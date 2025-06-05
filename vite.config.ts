@@ -33,6 +33,8 @@ export default defineConfig({
         main: path.resolve(import.meta.dirname, "client", "index.html"),
       },
     },
+    assetsDir: 'assets',
+    copyPublicDir: true,
   },
   server: {
     fs: {
