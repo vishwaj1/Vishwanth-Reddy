@@ -66,7 +66,7 @@ export function HeroSection() {
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--electric-blue))] to-[hsl(var(--neon-purple))] rounded-2xl blur-xl opacity-30"></div>
               <img 
-                src="/your-photo.jpg" 
+                src="https://i.ibb.co/s9MB6kBD/profile.jpg" 
                 alt="Vishwanth Reddy Jakka" 
                 className="relative rounded-2xl shadow-2xl w-full aspect-square object-cover"
               />
