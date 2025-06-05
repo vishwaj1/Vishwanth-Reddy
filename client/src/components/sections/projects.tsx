@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "PrettyPrompt",
     description: "Developed a Next.js and Tailwind CSS frontend with a FastAPI backend and Groq integration to rewrite, shorten, lengthen, and re-tone prompts using multiple LLMs, with real-time scoring and comparison. Implemented user authentication, prompt history, and template CRUD using NextAuth, Prisma ORM, and Supabase/Postgres, with full CORS support and responsive UI controls for seamless prompt management.",
-    image: "/Vishwanth-Reddy/client/src/images/pretty-prompt.png",
+    image: "/src/images/pretty-prompt.png",
     tags: ["Next.js", "FastAPI", "Groq", "NextAuth", "Prisma", "Supabase", "PostgreSQL"],
     category: "web",
     link: "https://prettyprompt.vercel.app/"
@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "Voice-Powered Chrome Extension",
     description: "Built Web Talk at HackHound2025 a hands-free web browsing Chrome extension that converts speech to text (WebSpeechAPI) and routes commands through Groq + Gemma2-9b-it LLMs. Executes tab/page actions via Chrome Tabs & Scripting APIs under ManifestV3, summarizes and answers question about the page. Further roadmap includes multilingual input and TTS feedback.",
-    image: "/Vishwanth-Reddy/client/src/images/web-talk.png",
+    image: "/src/images/web-talk.png",
     tags: ["Chrome Extension", "WebSpeechAPI", "Groq", "Gemma2-9b-it", "ManifestV3"],
     category: "web",
     link: "https://github.com/vishwaj1/Web-Talk"
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     title: "Anonymous Grading System",
     description: "Developed a Java-based grading system that automated exam evaluations using barcode scanning and student-ID mapping, boosting grading speed by 60%. Built a secure backend with AWS Amplify, Cognito, GraphQL, and DynamoDB, reducing manual grading errors by 80%.",
-    image: "/Vishwanth-Reddy/client/src/images/anonymous-grading-system.jpeg",
+    image: "/src/images/anonymous-grading-system.jpeg",
     tags: ["Java", "AWS Amplify", "Cognito", "GraphQL", "DynamoDB"],
     category: "mobile",
     link: "https://github.com/vishwaj1/Anonymous-Grading-System"
@@ -34,7 +34,7 @@ const projects = [
     id: 4,
     title: "Adaptive Genre Gaming",
     description: "Designed and developed EpicTale, an AI-driven fiction game that dynamically crafts storylines across genres using player decisions for immersive, replayable narratives. Built the frontend using React.js and CSS Modules, with features like character and genre selection supporting 50+ identity combinations. Integrated OpenAI APIs and managed story flow via Context API and Node.js backend, enabling branching narratives across 5+ genres including Mystical Thriller and Time Travel.",
-    image: "/Vishwanth-Reddy/client/src/images/adaptive-genre-gaming.jpeg",
+    image: "/src/images/adaptive-genre-gaming.jpeg",
     tags: ["React.js", "CSS Modules", "OpenAI API", "Node.js", "Context API"],
     category: "web",
     link: "https://github.com/vishwaj1/EpicTale"
@@ -43,7 +43,7 @@ const projects = [
     id: 5,
     title: "Distributed File System",
     description: "Developed a secure peer-to-peer file system with AES encryption and MySQL database integration. Implemented user authentication, file operations (create, read, update, delete), and file sharing capabilities. Built a GUI interface for file management with features like directory creation, file sharing with access control, and secure data transmission between peers.",
-    image: "/Vishwanth-Reddy/client/src/images/Distributed-file-system.jpeg",
+    image: "/src/images/Distributed-file-system.jpeg",
     tags: ["Python", "MySQL", "AES Encryption", "Socket Programming", "GUI"],
     category: "system",
     link: "https://github.com/vishwaj1/Distributed-File-System"
