@@ -71,35 +71,50 @@ export function ContactSection() {
             animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Let's Create Amazing Data Tools</h3>
+            <h3 className="text-2xl font-semibold mb-6">Let's Build Something Meaningful</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I'm passionate about building data tools that make developers' lives easier. Whether you need help with SQL query automation, data visualization, or want to discuss innovative data solutions, I'd love to hear from you!
+            As a software engineer, I enjoy creating full-stack applications, automating workflows, and integrating AI to solve real-world problems. Whether you're building scalable systems, streamlining backend services, or exploring smarter ways to work with data, I'd love to connect and collaborate!
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-4">
                 <i className="fas fa-envelope text-[hsl(var(--electric-blue))] text-xl"></i>
-                <span>your.email@example.com</span>
+                <span>vishwanthreddy2601@gmail.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <i className="fas fa-phone text-[hsl(var(--electric-blue))] text-xl"></i>
-                <span>+1 (555) 000-0000</span>
+                <span>+14439922881</span>
               </div>
               <div className="flex items-center space-x-4">
                 <i className="fas fa-map-marker-alt text-[hsl(var(--electric-blue))] text-xl"></i>
-                <span>Your Location</span>
+                <span>Charlotte, NC</span>
               </div>
             </div>
             
             {/* Social Links */}
             <div className="flex space-x-6">
-              <a href="#" className="text-2xl hover:text-[hsl(var(--electric-blue))] transition-colors">
+              <a 
+                href="https://github.com/vishwaj1" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-2xl hover:text-[hsl(var(--electric-blue))] transition-colors"
+              >
                 <i className="fab fa-github"></i>
               </a>
-              <a href="#" className="text-2xl hover:text-[hsl(var(--electric-blue))] transition-colors">
+              <a 
+                href="https://www.linkedin.com/in/jvvr/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-2xl hover:text-[hsl(var(--electric-blue))] transition-colors"
+              >
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="#" className="text-2xl hover:text-[hsl(var(--electric-blue))] transition-colors">
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-2xl hover:text-[hsl(var(--electric-blue))] transition-colors"
+              >
                 <i className="fab fa-twitter"></i>
               </a>
             </div>

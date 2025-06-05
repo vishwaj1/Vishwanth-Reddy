@@ -3,24 +3,39 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const experiences = [
   {
-    title: "Senior Data Tools Developer",
-    company: "Your Company",
-    period: "2022 - Present",
-    description: "Leading development of innovative data analysis tools that translate natural language into SQL queries. Created solutions that help developers access data insights 10x faster than traditional methods.",
+    title: "Software Engineer",
+    company: "University of Maryland Baltimore County",
+    period: "Aug 2024 - May 2025",
+    description: [
+      "Delivered Campus Pantry, a real-time meal-reservation site that lowers food waste and aids food-insecure students.",
+      "Built React and TypeScript front end with Redux and Google Maps, mobile loads under one second for more than two thousand users.",
+      "Designed REST and GraphQL APIs with Node.js, Express, PostgreSQL, implemented JWT role-based auth, and sustained about 3000 reservation requests per day with an error rate under one percent.",
+      "Containerised services in Docker and wired a GitHub Actions CI/CD pipeline for blue-green deployments on AWS EC2 and RDS, added OpenTelemetry and Grafana monitoring that cut average API latency from 450 ms to 180 ms."
+    ],
     color: "electric-blue"
   },
   {
     title: "Full Stack Developer",
-    company: "Tech Innovation Lab",
-    period: "2020 - 2022",
-    description: "Built comprehensive data visualization platforms and developer tools. Specialized in creating intuitive interfaces for complex database operations and analytics workflows.",
+    company: "Healthcare Solutions Inc.",
+    period: "June 2022 - May 2023",
+    description: [
+      "Helped rebuild a hospital dashboard using React + TypeScript, cutting load time by 35% and improving overall user experience.",
+      "Developed secure APIs in Node.js for patient scheduling and reports, using JWT/OAuth for login and data protection.",
+      "Containerized the app using Docker, and worked on Kubernetes deployment with auto-scaling and smooth updates.",
+      "Added an AI-powered feature that suggests diagnosis codes using a BERT model, reducing manual work for doctors by 22%."
+    ],
     color: "deep-purple"
   },
   {
     title: "Software Developer",
-    company: "Data Solutions Inc.",
-    period: "2018 - 2020",
-    description: "Developed web applications focused on data processing and analysis. Created tools that automated complex data workflows and improved developer productivity.",
+    company: "Tech Innovations Lab",
+    period: "June 2021 - May 2022",
+    description: [
+      "Contributed to building EchoLens, an AI-driven meeting assistant using FastAPI, Celery, and HuggingFace (T5, BART) to summarize transcripts and extract action items from audio.",
+      "Integrated AssemblyAI for transcription and speaker diarization, storing audio in AWS S3 and processed data in DynamoDB, with scalable deployment via Docker on AWS EC2.",
+      "Developed the frontend with React.js, Tailwind CSS, and Web Audio API for synced playback and transcript highlights.",
+      "Implemented Slack and Google Calendar APIs and used JWT Auth to automate follow-ups and built CI/CD using GitHub Actions."
+    ],
     color: "electric-blue"
   }
 ];
@@ -60,7 +75,14 @@ export function ExperienceSection() {
                     <h3 className="text-xl font-semibold mb-2">{exp.title}</h3>
                     <p className={`text-[hsl(var(--${exp.color}))] mb-2`}>{exp.company}</p>
                     <p className="text-gray-400 text-sm mb-4">{exp.period}</p>
-                    <p className="text-gray-300">{exp.description}</p>
+                    <ul className="text-gray-300 space-y-2">
+                      {exp.description.map((item, i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="text-[hsl(var(--${exp.color}))] mr-2">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </motion.div>

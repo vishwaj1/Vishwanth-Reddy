@@ -12,47 +12,67 @@ export function HeroSection() {
         />
       </div>
       
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <motion.div 
-          className="animate-float"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fadeIn">
-            Hi, I'm <span className="gradient-text">Your Name</span>
-          </h1>
-          <motion.p 
-            className="text-xl md:text-2xl mb-8 text-gray-300"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+      <div className="relative z-10 container mx-auto px-6 max-w-6xl">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left side - Text content */}
+          <motion.div 
+            className="text-left"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            Full Stack Developer & Data Tool Creator
-          </motion.p>
-          <motion.p 
-            className="text-lg mb-12 text-gray-400 max-w-2xl mx-auto"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fadeIn">
+              Hi, I'm <span className="gradient-text">Vishwanth</span>
+            </h1>
+            <motion.p 
+              className="text-xl md:text-2xl mb-8 text-gray-300"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+            >
+              Software Engineer
+            </motion.p>
+            <motion.p 
+              className="text-lg mb-12 text-white bg-gradient-to-r from-[#2a2a72]/50 to-[#009ffd]/50 p-6 rounded-xl border border-white/20 shadow-lg"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+            >
+              Focused on building scalable web applications and integrating AI to create smarter, more intuitive user experiences. Skilled across the full stack — from crafting responsive frontends to designing robust backend systems and deploying them in the cloud. Passionate about clean code, practical solutions, and constantly learning new ways to push technology forward.
+            </motion.p>
+            
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.9, duration: 0.8 }}
+            >
+              <button className="px-8 py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow">
+                Resume
+              </button>
+              <button className="px-8 py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300">
+                Website
+              </button>
+            </motion.div>
+          </motion.div>
+
+          {/* Right side - Photo */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative"
           >
-            I create powerful data tools for developers that transform natural language questions into SQL queries, making data insights accessible to everyone.
-          </motion.p>
-        </motion.div>
-        
-        <motion.div 
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9, duration: 0.8 }}
-        >
-          <button className="px-8 py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow">
-            View My Work
-          </button>
-          <button className="px-8 py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300">
-            Download Resume
-          </button>
-        </motion.div>
+            <div className="relative w-full max-w-md mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--electric-blue))] to-[hsl(var(--neon-purple))] rounded-2xl blur-xl opacity-30"></div>
+              <img 
+                src="/your-photo.jpg" 
+                alt="Vishwanth Reddy Jakka" 
+                className="relative rounded-2xl shadow-2xl w-full aspect-square object-cover"
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
       
       {/* Floating Elements */}

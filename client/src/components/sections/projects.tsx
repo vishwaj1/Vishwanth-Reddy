@@ -5,52 +5,74 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 const projects = [
   {
     id: 1,
-    title: "SQL Query Assistant",
-    description: "Revolutionary data tool that transforms natural language questions into optimized SQL queries. Perfect for developers who want to analyze data without complex query writing.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["React", "AI/ML", "PostgreSQL", "Natural Language Processing"],
-    category: "data"
+    title: "PrettyPrompt",
+    description: "Developed a Next.js and Tailwind CSS frontend with a FastAPI backend and Groq integration to rewrite, shorten, lengthen, and re-tone prompts using multiple LLMs, with real-time scoring and comparison. Implemented user authentication, prompt history, and template CRUD using NextAuth, Prisma ORM, and Supabase/Postgres, with full CORS support and responsive UI controls for seamless prompt management.",
+    image: "src/images/pretty-prompt.png",
+    tags: ["Next.js", "FastAPI", "Groq", "NextAuth", "Prisma", "Supabase", "PostgreSQL"],
+    category: "web",
+    link: "https://prettyprompt.vercel.app/"
   },
   {
     id: 2,
-    title: "DataInsight Dashboard",
-    description: "Comprehensive analytics platform that helps developers identify trends and patterns in their data through intuitive visualizations and automated insights.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["React", "D3.js", "Node.js", "Data Visualization"],
-    category: "data"
+    title: "Voice-Powered Chrome Extension",
+    description: "Built Web Talk at HackHound2025 a hands-free web browsing Chrome extension that converts speech to text (WebSpeechAPI) and routes commands through Groq + Gemma2-9b-it LLMs. Executes tab/page actions via Chrome Tabs & Scripting APIs under ManifestV3, summarizes and answers question about the page. Further roadmap includes multilingual input and TTS feedback.",
+    image: "src/images/web-talk.png",
+    tags: ["Chrome Extension", "WebSpeechAPI", "Groq", "Gemma2-9b-it", "ManifestV3"],
+    category: "web",
+    link: "https://github.com/vishwaj1/Web-Talk"
   },
   {
     id: 3,
-    title: "Query Builder Pro",
-    description: "Visual query builder that allows developers to construct complex SQL queries through drag-and-drop interface, making database interactions more accessible.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["TypeScript", "React", "SQL", "Database Tools"],
-    category: "data"
+    title: "Anonymous Grading System",
+    description: "Developed a Java-based grading system that automated exam evaluations using barcode scanning and student-ID mapping, boosting grading speed by 60%. Built a secure backend with AWS Amplify, Cognito, GraphQL, and DynamoDB, reducing manual grading errors by 80%.",
+    image: "src/images/anonymous-grading-system.jpeg",
+    tags: ["Java", "AWS Amplify", "Cognito", "GraphQL", "DynamoDB"],
+    category: "mobile",
+    link: "https://github.com/vishwaj1/Anonymous-Grading-System"
   },
   {
     id: 4,
-    title: "TrendScope Analytics",
-    description: "Advanced trend analysis tool that automatically detects patterns in time-series data and provides actionable insights for business intelligence.",
-    image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["Python", "Machine Learning", "FastAPI", "Time Series"],
-    category: "data"
+    title: "Adaptive Genre Gaming",
+    description: "Designed and developed EpicTale, an AI-driven fiction game that dynamically crafts storylines across genres using player decisions for immersive, replayable narratives. Built the frontend using React.js and CSS Modules, with features like character and genre selection supporting 50+ identity combinations. Integrated OpenAI APIs and managed story flow via Context API and Node.js backend, enabling branching narratives across 5+ genres including Mystical Thriller and Time Travel.",
+    image: "src/images/adaptive-genre-gaming.jpeg",
+    tags: ["React.js", "CSS Modules", "OpenAI API", "Node.js", "Context API"],
+    category: "web",
+    link: "https://github.com/vishwaj1/EpicTale"
   },
   {
     id: 5,
-    title: "DevData Toolkit",
-    description: "Complete suite of data tools for developers including schema analyzers, query optimizers, and performance monitors for database operations.",
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["Next.js", "GraphQL", "Redis", "Performance Monitoring"],
-    category: "web"
+    title: "Distributed File System",
+    description: "Developed a secure peer-to-peer file system with AES encryption and MySQL database integration. Implemented user authentication, file operations (create, read, update, delete), and file sharing capabilities. Built a GUI interface for file management with features like directory creation, file sharing with access control, and secure data transmission between peers.",
+    image: "src/images/Distributed-file-system.jpeg",
+    tags: ["Python", "MySQL", "AES Encryption", "Socket Programming", "GUI"],
+    category: "system",
+    link: "https://github.com/vishwaj1/Distributed-File-System"
   },
   {
     id: 6,
-    title: "Smart Data Explorer",
-    description: "Mobile-first application that connects to multiple data sources and provides AI-powered exploration capabilities for on-the-go data analysis.",
-    image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-    tags: ["React Native", "AI Integration", "Multi-Database"],
-    category: "mobile"
-  }
+    title: "Weapon Detection System",
+    description: "Developed a real-time weapon detection system using AlexNet deep learning architecture, achieving 95% accuracy. Optimized model data preprocessing techniques, reducing training time by 30% and improving inference speed. Reduced latency in real-time detection by fine-tuning inference pipelines, decreasing processing time by 40% for video stream analysis. Enhanced public safety by designing a scalable detection system, enabling integration with surveillance networks and reducing false positives by 20%.",
+    image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    tags: ["AlexNet", "Deep Learning", "Computer Vision", "Python", "Real-time Processing"],
+    category: "ml",
+    link: "https://github.com/vishwaj1/WeaponDetectionUsingAlexnet"
+  },
+  // {
+  //   id: 7,
+  //   title: "DevData Toolkit",
+  //   description: "Complete suite of data tools for developers including schema analyzers, query optimizers, and performance monitors for database operations.",
+  //   image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+  //   tags: ["Next.js", "GraphQL", "Redis", "Performance Monitoring"],
+  //   category: "web"
+  // },
+  // {
+  //   id: 8,
+  //   title: "Smart Data Explorer",
+  //   description: "Mobile-first application that connects to multiple data sources and provides AI-powered exploration capabilities for on-the-go data analysis.",
+  //   image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+  //   tags: ["React Native", "AI Integration", "Multi-Database"],
+  //   category: "mobile"
+  // }
 ];
 
 export function ProjectsSection() {
@@ -63,9 +85,10 @@ export function ProjectsSection() {
 
   const filters = [
     { id: "all", label: "All" },
-    { id: "data", label: "Data Tools" },
     { id: "web", label: "Web Apps" },
-    { id: "mobile", label: "Mobile" }
+    { id: "mobile", label: "Mobile Apps" },
+    { id: "ml", label: "ML" },
+    { id: "system", label: "System" }
   ];
 
   return (
@@ -118,7 +141,7 @@ export function ProjectsSection() {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-48 object-cover" 
+                  className="w-full h-56 object-contain bg-[#1a1a1a] p-2" 
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
@@ -134,10 +157,8 @@ export function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <a href="#" className="text-[hsl(var(--electric-blue))] hover:text-[hsl(var(--deep-purple))] transition-colors">
-                      <i className="fas fa-external-link-alt"></i> Live Demo
-                    </a>
-                    <a href="#" className="text-[hsl(var(--electric-blue))] hover:text-[hsl(var(--deep-purple))] transition-colors">
+                    
+                    <a href={project.link} target="_blank"  className="text-[hsl(var(--electric-blue))] hover:text-[hsl(var(--deep-purple))] transition-colors">
                       <i className="fab fa-github"></i> Code
                     </a>
                   </div>

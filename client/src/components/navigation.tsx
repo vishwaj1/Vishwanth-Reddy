@@ -31,12 +31,12 @@ export function Navigation() {
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-bold gradient-text">Your Name</div>
+            <div className="text-xl font-bold gradient-text">Vishwanth Reddy Jakka</div>
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Home</button>
-              <button onClick={() => scrollToSection('about')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">About</button>
-              <button onClick={() => scrollToSection('projects')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Projects</button>
+              <button onClick={() => scrollToSection('about')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Skills</button>
               <button onClick={() => scrollToSection('experience')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Experience</button>
+              <button onClick={() => scrollToSection('projects')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Projects</button>
               <button onClick={() => scrollToSection('contact')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Contact</button>
             </div>
             <button 
@@ -59,9 +59,9 @@ export function Navigation() {
         >
           <div className="flex flex-col items-center justify-center h-full space-y-8 text-xl">
             <button onClick={() => scrollToSection('home')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Home</button>
-            <button onClick={() => scrollToSection('about')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">About</button>
-            <button onClick={() => scrollToSection('projects')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Projects</button>
+            <button onClick={() => scrollToSection('about')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Skills</button>
             <button onClick={() => scrollToSection('experience')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Experience</button>
+            <button onClick={() => scrollToSection('projects')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Projects</button>
             <button onClick={() => scrollToSection('contact')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Contact</button>
           </div>
         </motion.div>
