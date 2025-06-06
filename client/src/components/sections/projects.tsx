@@ -1,13 +1,19 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import prettyPrompt from '@/assets/projects/pretty-prompt.png';
+import webTalk from '@/assets/projects/web-talk.png';
+import anonymousGradingSystem from '@/assets/projects/anonymous-grading-system.jpg';
+import adaptiveGenreGaming from '@/assets/projects/adaptive-genre-gaming.jpg';
+import distributedFileSystem from '@/assets/projects/distributed-file-system.jpg';
+import weaponDetectionSystem from '@/assets/projects/weapon-detection-system.jpg';
 
 const projects = [
   {
     id: 1,
     title: "PrettyPrompt",
     description: "Developed a Next.js and Tailwind CSS frontend with a FastAPI backend and Groq integration to rewrite, shorten, lengthen, and re-tone prompts using multiple LLMs, with real-time scoring and comparison. Implemented user authentication, prompt history, and template CRUD using NextAuth, Prisma ORM, and Supabase/Postgres, with full CORS support and responsive UI controls for seamless prompt management.",
-    image: "https://i.ibb.co/MkNgqgjC/pretty-prompt.png",
+    image: prettyPrompt,
     tags: ["Next.js", "FastAPI", "Groq", "NextAuth", "Prisma", "Supabase", "PostgreSQL"],
     category: "web",
     link: "https://prettyprompt.vercel.app/"
@@ -17,7 +23,7 @@ const projects = [
     id: 2,
     title: "Voice-Powered Chrome Extension",
     description: "Built Web Talk at HackHound2025 a hands-free web browsing Chrome extension that converts speech to text (WebSpeechAPI) and routes commands through Groq + Gemma2-9b-it LLMs. Executes tab/page actions via Chrome Tabs & Scripting APIs under ManifestV3, summarizes and answers question about the page. Further roadmap includes multilingual input and TTS feedback.",
-    image: "https://i.ibb.co/QF4M6gDP/web-talk.png",
+    image: webTalk,
     tags: ["Chrome Extension", "WebSpeechAPI", "Groq", "Gemma2-9b-it", "ManifestV3"],
     category: "web",
     link: "https://github.com/vishwaj1/Web-Talk"
@@ -26,7 +32,7 @@ const projects = [
     id: 3,
     title: "Anonymous Grading System",
     description: "Developed a Java-based grading system that automated exam evaluations using barcode scanning and student-ID mapping, boosting grading speed by 60%. Built a secure backend with AWS Amplify, Cognito, GraphQL, and DynamoDB, reducing manual grading errors by 80%.",
-    image: "https://i.ibb.co/bMW1H8qb/anonymous-grading-system.jpg",
+    image: anonymousGradingSystem,
     tags: ["Java", "AWS Amplify", "Cognito", "GraphQL", "DynamoDB"],
     category: "mobile",
     link: "https://github.com/vishwaj1/Anonymous-Grading-System"
@@ -35,7 +41,7 @@ const projects = [
     id: 4,
     title: "Adaptive Genre Gaming",
     description: "Designed and developed EpicTale, an AI-driven fiction game that dynamically crafts storylines across genres using player decisions for immersive, replayable narratives. Built the frontend using React.js and CSS Modules, with features like character and genre selection supporting 50+ identity combinations. Integrated OpenAI APIs and managed story flow via Context API and Node.js backend, enabling branching narratives across 5+ genres including Mystical Thriller and Time Travel.",
-    image: "https://i.ibb.co/KcykrcBh/adaptive-genre-gaming.jpg",
+    image: adaptiveGenreGaming,
     tags: ["React.js", "CSS Modules", "OpenAI API", "Node.js", "Context API"],
     category: "web",
     link: "https://github.com/vishwaj1/EpicTale"
@@ -44,7 +50,7 @@ const projects = [
     id: 5,
     title: "Distributed File System",
     description: "Developed a secure peer-to-peer file system with AES encryption and MySQL database integration. Implemented user authentication, file operations (create, read, update, delete), and file sharing capabilities. Built a GUI interface for file management with features like directory creation, file sharing with access control, and secure data transmission between peers.",
-    image: "https://i.ibb.co/4nvgFtmP/Distributed-file-system.jpg",
+    image: distributedFileSystem,
     tags: ["Python", "MySQL", "AES Encryption", "Socket Programming", "GUI"],
     category: "system",
     link: "https://github.com/vishwaj1/Distributed-File-System"
@@ -53,7 +59,7 @@ const projects = [
     id: 6,
     title: "Weapon Detection System",
     description: "Developed a real-time weapon detection system using AlexNet deep learning architecture, achieving 95% accuracy. Optimized model data preprocessing techniques, reducing training time by 30% and improving inference speed. Reduced latency in real-time detection by fine-tuning inference pipelines, decreasing processing time by 40% for video stream analysis. Enhanced public safety by designing a scalable detection system, enabling integration with surveillance networks and reducing false positives by 20%.",
-    image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: weaponDetectionSystem,
     tags: ["AlexNet", "Deep Learning", "Computer Vision", "Python", "Real-time Processing"],
     category: "ml",
     link: "https://github.com/vishwaj1/WeaponDetectionUsingAlexnet"
