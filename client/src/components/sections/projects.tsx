@@ -3,10 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import prettyPrompt from '@/assets/projects/pretty-prompt.png';
 import webTalk from '@/assets/projects/web-talk.png';
-import anonymousGradingSystem from '@/assets/projects/anonymous-grading-system.jpg';
-import adaptiveGenreGaming from '@/assets/projects/adaptive-genre-gaming.jpg';
-import distributedFileSystem from '@/assets/projects/distributed-file-system.jpg';
-import weaponDetectionSystem from '@/assets/projects/weapon-detection-system.jpg';
+import anonymousGradingSystem from '@/assets/projects/anonymous-grading-system.jpeg';
+import adaptiveGenreGaming from '@/assets/projects/adaptive-genre-gaming.jpeg';
+import distributedFileSystem from '@/assets/projects/distributed-file-system.jpeg';
 
 const projects = [
   {
@@ -59,7 +58,7 @@ const projects = [
     id: 6,
     title: "Weapon Detection System",
     description: "Developed a real-time weapon detection system using AlexNet deep learning architecture, achieving 95% accuracy. Optimized model data preprocessing techniques, reducing training time by 30% and improving inference speed. Reduced latency in real-time detection by fine-tuning inference pipelines, decreasing processing time by 40% for video stream analysis. Enhanced public safety by designing a scalable detection system, enabling integration with surveillance networks and reducing false positives by 20%.",
-    image: weaponDetectionSystem,
+    image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     tags: ["AlexNet", "Deep Learning", "Computer Vision", "Python", "Real-time Processing"],
     category: "ml",
     link: "https://github.com/vishwaj1/WeaponDetectionUsingAlexnet"

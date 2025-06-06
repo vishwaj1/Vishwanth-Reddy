@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImage from '@/assets/profile.jpg';
+import profileImage from '@/assets/profile.jpeg';
 export function HeroSection() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
