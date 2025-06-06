@@ -53,7 +53,7 @@ export function HeroSection() {
             >
               <button className="px-6 sm:px-8 py-3 sm:py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow">
               <a 
-                href="" 
+                href="https://vishwaj1.github.io/docs/VishwanthReddy.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
