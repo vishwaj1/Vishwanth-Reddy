@@ -5,7 +5,7 @@ import prettyPrompt from '@/assets/projects/pretty-prompt.png';
 import webTalk from '@/assets/projects/web-talk.png';
 import anonymousGradingSystem from '@/assets/projects/anonymous-grading-system.jpeg';
 import adaptiveGenreGaming from '@/assets/projects/adaptive-genre-gaming.jpeg';
-import distributedFileSystem from '@/assets/projects/distributed-file-system.jpeg';
+import distributedFileSystem from '@/assets/projects/Distributed-file-system.jpeg';
 
 const projects = [
   {
