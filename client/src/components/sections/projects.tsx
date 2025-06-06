@@ -26,7 +26,7 @@ const projects = [
     id: 3,
     title: "Anonymous Grading System",
     description: "Developed a Java-based grading system that automated exam evaluations using barcode scanning and student-ID mapping, boosting grading speed by 60%. Built a secure backend with AWS Amplify, Cognito, GraphQL, and DynamoDB, reducing manual grading errors by 80%.",
-    image: "https://i.ibb.co/CKMb2mRk/anonymous-grading-system.jpg",
+    image: "https://i.ibb.co/bMW1H8qb/anonymous-grading-system.jpg",
     tags: ["Java", "AWS Amplify", "Cognito", "GraphQL", "DynamoDB"],
     category: "mobile",
     link: "https://github.com/vishwaj1/Anonymous-Grading-System"
