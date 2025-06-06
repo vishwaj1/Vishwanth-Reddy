@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import profileImage from '@/assets/profile.jpeg';
+import profileImage1 from '@/assets/profile2.jpeg';
+import { useState } from 'react';
 export function HeroSection() {
+
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       {/* Modern workspace background */}
@@ -66,9 +70,11 @@ export function HeroSection() {
             <div className="relative w-full max-w-[280px] sm:max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--electric-blue))] to-[hsl(var(--neon-purple))] rounded-2xl blur-xl opacity-30"></div>
               <img 
-                src={profileImage} 
+                src={isHovered ? profileImage : profileImage1} 
                 alt="Vishwanth Reddy Jakka" 
                 className="relative rounded-2xl shadow-2xl w-full aspect-square object-cover"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
               />
             </div>
           </motion.div>
