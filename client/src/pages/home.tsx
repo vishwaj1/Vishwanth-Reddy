@@ -7,6 +7,7 @@ import { ProjectsSection } from "@/components/sections/projects";
 import { ExperienceSection } from "@/components/sections/experience";
 import { ContactSection } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
+import { Certifications } from "@/components/sections/certifications";
 import { useCustomCursor } from "@/hooks/use-custom-cursor";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <AboutSection />
       <ExperienceSection />
       <ProjectsSection />
+      <Certifications />
       <ContactSection />
       <Footer />
     </div>
