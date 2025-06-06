@@ -39,6 +39,7 @@ export function Navigation() {
               <button onClick={() => scrollToSection('home')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Home</button>
               <button onClick={() => scrollToSection('about')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Skills</button>
               <button onClick={() => scrollToSection('experience')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Experience</button>
+              <button onClick={() => scrollToSection('education')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Education</button>
               <button onClick={() => scrollToSection('projects')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Projects</button>
               <button onClick={() => scrollToSection('certifications')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Certifications</button>
               <button onClick={() => scrollToSection('contact')} className="hover:text-[hsl(var(--electric-blue))] transition-colors">Contact</button>

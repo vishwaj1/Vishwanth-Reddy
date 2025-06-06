@@ -52,11 +52,22 @@ export function HeroSection() {
               transition={{ delay: 0.9, duration: 0.8 }}
             >
               <button className="px-6 sm:px-8 py-3 sm:py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow">
+              <a 
+                href="" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
                 Resume
+              </a>
               </button>
-              <button className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300">
-                Website
-              </button>
+              <a 
+                href="http://linkedin.com/in/jvvr/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 inline-block"
+              >
+                LinkedIn
+              </a>
             </motion.div>
           </motion.div>
 

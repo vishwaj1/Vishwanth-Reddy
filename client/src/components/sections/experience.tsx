@@ -16,8 +16,8 @@ const experiences = [
   },
   {
     title: "Full Stack Developer",
-    company: "IDS",
-    period: "June 2022 - May 2023",
+    company: "Polycom Inc",
+    period: "April 2022 - May 2023",
     description: [
       "Helped rebuild a hospital dashboard using React + TypeScript, cutting load time by 35% and improving overall user experience.",
       "Developed secure APIs in Node.js for patient scheduling and reports, using JWT/OAuth for login and data protection.",
@@ -26,18 +26,18 @@ const experiences = [
     ],
     color: "deep-purple"
   },
-  {
-    title: "Software Developer",
-    company: "IDS",
-    period: "June 2021 - May 2022",
-    description: [
-      "Contributed to building EchoLens, an AI-driven meeting assistant using FastAPI, Celery, and HuggingFace (T5, BART) to summarize transcripts and extract action items from audio.",
-      "Integrated AssemblyAI for transcription and speaker diarization, storing audio in AWS S3 and processed data in DynamoDB, with scalable deployment via Docker on AWS EC2.",
-      "Developed the frontend with React.js, Tailwind CSS, and Web Audio API for synced playback and transcript highlights.",
-      "Implemented Slack and Google Calendar APIs and used JWT Auth to automate follow-ups and built CI/CD using GitHub Actions."
-    ],
-    color: "electric-blue"
-  }
+  // {
+  //   title: "Software Developer",
+  //   company: "IDS",
+  //   period: "June 2021 - May 2022",
+  //   description: [
+  //     "Contributed to building EchoLens, an AI-driven meeting assistant using FastAPI, Celery, and HuggingFace (T5, BART) to summarize transcripts and extract action items from audio.",
+  //     "Integrated AssemblyAI for transcription and speaker diarization, storing audio in AWS S3 and processed data in DynamoDB, with scalable deployment via Docker on AWS EC2.",
+  //     "Developed the frontend with React.js, Tailwind CSS, and Web Audio API for synced playback and transcript highlights.",
+  //     "Implemented Slack and Google Calendar APIs and used JWT Auth to automate follow-ups and built CI/CD using GitHub Actions."
+  //   ],
+  //   color: "electric-blue"
+  // }
 ];
 
 export function ExperienceSection() {
