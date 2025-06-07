@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import profileImage from '@/assets/profile.jpeg';
 import profileImage1 from '@/assets/profile2.jpeg';
 import { useState } from 'react';
+import { FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+
 export function HeroSection() {
 
   const [isHovered, setIsHovered] = useState(false);
@@ -51,22 +53,32 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.8 }}
             >
-              <button className="px-6 sm:px-8 py-3 sm:py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow">
               <a 
                 href="https://vishwaj1.github.io/docs/VishwanthReddy.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                className="px-6 sm:px-8 py-3 sm:py-4 gradient-bg text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 animate-glow flex items-center gap-2"
               >
+                <FaFileAlt className="text-xl" />
                 Resume
               </a>
-              </button>
               <a 
                 href="http://linkedin.com/in/jvvr/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 inline-block"
+                className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
               >
+                <FaLinkedin className="text-xl" />
                 LinkedIn
+              </a>
+              <a 
+                href="https://github.com/vishwaj1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 sm:px-8 py-3 sm:py-4 glass text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+              >
+                <FaGithub className="text-xl" />
+                GitHub
               </a>
             </motion.div>
           </motion.div>
