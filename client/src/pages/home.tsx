@@ -9,6 +9,7 @@ import { ContactSection } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
 import { EducationSection } from "@/components/sections/education";
 import { useCustomCursor } from "@/hooks/use-custom-cursor";
+import { VisitorTracker } from "@/components/analytics/visitor-tracker";
 
 export default function Home() {
   useCustomCursor();
@@ -18,6 +19,7 @@ export default function Home() {
       <LoadingBar />
       <CustomCursor />
       <Navigation />
+      <VisitorTracker />
       <HeroSection />
       <AboutSection />
       <ExperienceSection />
