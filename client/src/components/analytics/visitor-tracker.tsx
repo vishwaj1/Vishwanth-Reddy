@@ -22,7 +22,7 @@ export function VisitorTracker() {
 
         // Check for token in both possible locations
         const token = import.meta.env.VITE_GITHUB_TOKEN;
-        console.log('Token:', import.meta.env.VITE_HELLO);
+        //console.log('Token:', import.meta.env.VITE_HELLO);
         
         if (!token) {
           console.error('GitHub token is not configured. Please check your .env file.');
@@ -30,8 +30,8 @@ export function VisitorTracker() {
           return;
         }
 
-        console.log('Visitor data:', visitorData);
-        console.log('GitHub Token available:', !!token);
+            // console.log('Visitor data:', visitorData);
+            // console.log('GitHub Token available:', !!token);
 
         // Send data to your backend or analytics service
         const response = await fetch('https://api.github.com/gists', {
@@ -52,18 +52,18 @@ export function VisitorTracker() {
           })
         });
 
-        if (!response.ok) {
-          const errorData = await response.json();
-          console.error('Failed to log visit:', errorData);
-          if (errorData.message === 'Bad credentials') {
-            console.error('Please check your GitHub token configuration');
-          }
-        } else {
-          const gistData = await response.json();
-          console.log('Successfully created gist:', gistData.html_url);
-        }
+        // if (!response.ok) {
+        //   const errorData = await response.json();
+        //   console.error('Failed to log visit:', errorData);
+        //   if (errorData.message === 'Bad credentials') {
+        //     console.error('Please check your GitHub token configuration');
+        //   }
+        // } else {
+        //   const gistData = await response.json();
+        //   console.log('Successfully created gist:', gistData.html_url);
+        // }
       } catch (error) {
-        console.error('Error tracking visit:', error);
+        //console.error('Error tracking visit:', error);
       }
     };
 
