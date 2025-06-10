@@ -20,50 +20,20 @@ export function VisitorTracker() {
           path: window.location.pathname
         };
 
-        // Check for token in both possible locations
-        const token = import.meta.env.VITE_GITHUB_TOKEN;
-        //console.log('Token:', import.meta.env.VITE_HELLO);
-        
-        if (!token) {
-          console.error('GitHub token is not configured. Please check your .env file.');
-          console.log('Available env vars:', import.meta.env);
-          return;
+        // Initialize Umami
+        const script = document.createElement('script');
+        script.defer = true;
+        script.src = 'https://analytics.umami.is/script.js';
+        script.setAttribute('data-website-id', '8241cef4-439b-4211-aa36-26842bf4eb25'); // Replace with your website ID
+        document.head.appendChild(script);
+
+        // Log visit data to console for development
+        if (import.meta.env.DEV) {
+          console.log('Visitor data:', visitorData);
         }
 
-            // console.log('Visitor data:', visitorData);
-            // console.log('GitHub Token available:', !!token);
-
-        // Send data to your backend or analytics service
-        const response = await fetch('https://api.github.com/gists', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Accept': 'application/vnd.github.v3+json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            description: 'Portfolio Visitor Log - ' + new Date().toLocaleDateString(),
-            public: false,
-            files: {
-              [`visit-${new Date().toISOString().replace(/[:.]/g, '-')}.json`]: {
-                content: JSON.stringify(visitorData, null, 2)
-              }
-            }
-          })
-        });
-
-        // if (!response.ok) {
-        //   const errorData = await response.json();
-        //   console.error('Failed to log visit:', errorData);
-        //   if (errorData.message === 'Bad credentials') {
-        //     console.error('Please check your GitHub token configuration');
-        //   }
-        // } else {
-        //   const gistData = await response.json();
-        //   console.log('Successfully created gist:', gistData.html_url);
-        // }
       } catch (error) {
-        //console.error('Error tracking visit:', error);
+        console.error('Error tracking visit:', error);
       }
     };
 

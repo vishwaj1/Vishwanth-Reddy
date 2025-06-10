@@ -4,7 +4,6 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
-  envPrefix: ['NEXT_PUBLIC_', 'VITE_'],
   base: '/vishwaj1/',
   plugins: [
     react(),
@@ -43,7 +42,5 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
-  define: {
-    'import.meta.env.VITE_GITHUB_TOKEN': JSON.stringify(process.env.VITE_GITHUB_TOKEN),
-  },
+  
 });
