@@ -29,11 +29,11 @@ export function VisitorTracker() {
 
         // Log visit data to console for development
         if (import.meta.env.DEV) {
-          console.log('Visitor data:', visitorData);
+         // console.log('Visitor data:', visitorData);
         }
 
       } catch (error) {
-        console.error('Error tracking visit:', error);
+        //console.error('Error tracking visit:', error);
       }
     };
 
